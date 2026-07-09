@@ -1,0 +1,774 @@
+[
+  {
+    "shop_name": "OB. Moharam beck",
+    "area_manager": "Mostafa Adel"
+  },
+  {
+    "shop_name": "OB. Ghet Elenab",
+    "area_manager": "Abdallah Ibrahim"
+  },
+  {
+    "shop_name": "OB. El Werdian",
+    "area_manager": "Abdallah Ibrahim"
+  },
+  {
+    "shop_name": "OB. Bawalino",
+    "area_manager": "Abdallah Ibrahim"
+  },
+  {
+    "shop_name": "OB. Bashayer Elkhair",
+    "area_manager": "Abdallah Ibrahim"
+  },
+  {
+    "shop_name": "EXP Karmoz 2",
+    "area_manager": "Abdallah Ibrahim"
+  },
+  {
+    "shop_name": "EXP Karmoz",
+    "area_manager": "Abdallah Ibrahim"
+  },
+  {
+    "shop_name": "EXP Elkabary",
+    "area_manager": "Mostafa Adel"
+  },
+  {
+    "shop_name": "EXP El Wardian",
+    "area_manager": "Abdallah Ibrahim"
+  },
+  {
+    "shop_name": "EXP El Eskandrany",
+    "area_manager": "Abdallah Ibrahim"
+  },
+  {
+    "shop_name": "OB. Tawfikia Square",
+    "area_manager": "Ahmed Bahgat"
+  },
+  {
+    "shop_name": "OB. Meit Oukba",
+    "area_manager": "Ahmed Bahgat"
+  },
+  {
+    "shop_name": "OB. Embaba2",
+    "area_manager": "Ahmed Bahgat"
+  },
+  {
+    "shop_name": "OB. Embaba 1",
+    "area_manager": "Ahmed Bahgat"
+  },
+  {
+    "shop_name": "OB. El Oroba",
+    "area_manager": "Ahmed Bahgat"
+  },
+  {
+    "shop_name": "OB. Bashteel",
+    "area_manager": "Ahmed Bahgat"
+  },
+  {
+    "shop_name": "OB. Awseem",
+    "area_manager": "Ahmed Bahgat"
+  },
+  {
+    "shop_name": "OB. Al Mahata",
+    "area_manager": "Ahmed Bahgat"
+  },
+  {
+    "shop_name": "Fr Omrania",
+    "area_manager": "Ahmed Bahgat"
+  },
+  {
+    "shop_name": "Fr El Haram",
+    "area_manager": "Ahmed Bahgat"
+  },
+  {
+    "shop_name": "Fr Down Town",
+    "area_manager": "Ahmed Bahgat"
+  },
+  {
+    "shop_name": "EXP Ramsis Sq",
+    "area_manager": "Ahmed Bahgat"
+  },
+  {
+    "shop_name": "EXP Omranya",
+    "area_manager": "Ahmed Bahgat"
+  },
+  {
+    "shop_name": "EXP Imbaba",
+    "area_manager": "Ahmed Bahgat"
+  },
+  {
+    "shop_name": "EXP Hawamdya",
+    "area_manager": "Ahmed Bahgat"
+  },
+  {
+    "shop_name": "EXP Giza Mall",
+    "area_manager": "Ahmed Bahgat"
+  },
+  {
+    "shop_name": "EXP Embaba 2",
+    "area_manager": "Ahmed Bahgat"
+  },
+  {
+    "shop_name": "EXP El Bahr El Azam",
+    "area_manager": "Ahmed Bahgat"
+  },
+  {
+    "shop_name": "OB. PortSaid Elrebat",
+    "area_manager": "Ahmed Elgendy"
+  },
+  {
+    "shop_name": "OB. PortSaid Belal Ibn Rabah",
+    "area_manager": "Ahmed Elgendy"
+  },
+  {
+    "shop_name": "OB. AboKhalifa",
+    "area_manager": "Ahmed Elgendy"
+  },
+  {
+    "shop_name": "Fr Port Said Canal",
+    "area_manager": "Ahmed Elgendy"
+  },
+  {
+    "shop_name": "EXP Qasaseen",
+    "area_manager": "Ahmed Elgendy"
+  },
+  {
+    "shop_name": "EXP Manzala",
+    "area_manager": "Ahmed Elgendy"
+  },
+  {
+    "shop_name": "EXP Damietta",
+    "area_manager": "Ahmed Elgendy"
+  },
+  {
+    "shop_name": "OB. Zahrya",
+    "area_manager": "Ahmed Moharam"
+  },
+  {
+    "shop_name": "OB. Tera 1",
+    "area_manager": "Ahmed Moharam"
+  },
+  {
+    "shop_name": "OB. Matar",
+    "area_manager": "Ahmed Moharam"
+  },
+  {
+    "shop_name": "Fr Agami",
+    "area_manager": "Ahmed Moharam"
+  },
+  {
+    "shop_name": "EXP Saba Banat",
+    "area_manager": "Ahmed Moharam"
+  },
+  {
+    "shop_name": "EXP Ras Elteen",
+    "area_manager": "Ahmed Moharam"
+  },
+  {
+    "shop_name": "EXP Manshya",
+    "area_manager": "Ahmed Moharam"
+  },
+  {
+    "shop_name": "EXP El Nakhil",
+    "area_manager": "Ahmed Moharam"
+  },
+  {
+    "shop_name": "EXP El Betash",
+    "area_manager": "Ahmed Moharam"
+  },
+  {
+    "shop_name": "EXP Bahary",
+    "area_manager": "Ahmed Moharam"
+  },
+  {
+    "shop_name": "EXP Amria",
+    "area_manager": "Ahmed Moharam"
+  },
+  {
+    "shop_name": "OB. Qena",
+    "area_manager": "Amir Nakhla"
+  },
+  {
+    "shop_name": "OB. Hagaza",
+    "area_manager": "Amir Nakhla"
+  },
+  {
+    "shop_name": "OB. Bardis",
+    "area_manager": "Amir Nakhla"
+  },
+  {
+    "shop_name": "Fr Sohag",
+    "area_manager": "Amir Nakhla"
+  },
+  {
+    "shop_name": "Fr Naga Hamady",
+    "area_manager": "Amir Nakhla"
+  },
+  {
+    "shop_name": "EXP Sohag",
+    "area_manager": "Amir Nakhla"
+  },
+  {
+    "shop_name": "EXP Saqulta",
+    "area_manager": "Amir Nakhla"
+  },
+  {
+    "shop_name": "EXP Sahel Selim",
+    "area_manager": "Amir Nakhla"
+  },
+  {
+    "shop_name": "EXP Qena New",
+    "area_manager": "Amir Nakhla"
+  },
+  {
+    "shop_name": "EXP Qeft",
+    "area_manager": "Amir Nakhla"
+  },
+  {
+    "shop_name": "EXP Nagaa Hamady",
+    "area_manager": "Amir Nakhla"
+  },
+  {
+    "shop_name": "EXP Farshout",
+    "area_manager": "Amir Nakhla"
+  },
+  {
+    "shop_name": "EXP El Gouna",
+    "area_manager": "Amir Nakhla"
+  },
+  {
+    "shop_name": "EXP Abu Tesht",
+    "area_manager": "Amir Nakhla"
+  },
+  {
+    "shop_name": "EX Qous New",
+    "area_manager": "Amir Nakhla"
+  },
+  {
+    "shop_name": "OB. PortSaid El Manakh",
+    "area_manager": "Amr Ali"
+  },
+  {
+    "shop_name": "Fr Ismailia",
+    "area_manager": "Amr Ali"
+  },
+  {
+    "shop_name": "EXP PortSaid",
+    "area_manager": "Amr Ali"
+  },
+  {
+    "shop_name": "EXP Port Said2",
+    "area_manager": "Amr Ali"
+  },
+  {
+    "shop_name": "EXP Port Fouad",
+    "area_manager": "Amr Ali"
+  },
+  {
+    "shop_name": "EXP Ismailia3",
+    "area_manager": "Amr Ali"
+  },
+  {
+    "shop_name": "OB. Manshiet Elsad Elaaly",
+    "area_manager": "Eslam Gouda"
+  },
+  {
+    "shop_name": "OB. 20th St",
+    "area_manager": "Eslam Gouda"
+  },
+  {
+    "shop_name": "Fr El tagamoe EL khames",
+    "area_manager": "Eslam Gouda"
+  },
+  {
+    "shop_name": "EXP Nasr City 10th dist",
+    "area_manager": "Eslam Gouda"
+  },
+  {
+    "shop_name": "EXP Nady ElSekka",
+    "area_manager": "Eslam Gouda"
+  },
+  {
+    "shop_name": "EXP Madinet Elsalam 2",
+    "area_manager": "Eslam Gouda"
+  },
+  {
+    "shop_name": "EXP MADIENET EL SALAM",
+    "area_manager": "Eslam Gouda"
+  },
+  {
+    "shop_name": "EXP El Marg",
+    "area_manager": "Eslam Gouda"
+  },
+  {
+    "shop_name": "EXP Ahmed Al Zomor",
+    "area_manager": "Eslam Gouda"
+  },
+  {
+    "shop_name": "OB. Nobria",
+    "area_manager": "Hossam Hafez"
+  },
+  {
+    "shop_name": "OB. Khatatba",
+    "area_manager": "Hossam Hafez"
+  },
+  {
+    "shop_name": "EXP Wadi EL Natron",
+    "area_manager": "Hossam Hafez"
+  },
+  {
+    "shop_name": "EXP Sadat 3",
+    "area_manager": "Hossam Hafez"
+  },
+  {
+    "shop_name": "OB. Tawabek",
+    "area_manager": "Ibrahim Mahmoud"
+  },
+  {
+    "shop_name": "OB. Taawon Faisal",
+    "area_manager": "Ibrahim Mahmoud"
+  },
+  {
+    "shop_name": "OB. Selim st",
+    "area_manager": "Ibrahim Mahmoud"
+  },
+  {
+    "shop_name": "OB. Nazlet Batran",
+    "area_manager": "Ibrahim Mahmoud"
+  },
+  {
+    "shop_name": "OB. Hadayek 6 October",
+    "area_manager": "Ibrahim Mahmoud"
+  },
+  {
+    "shop_name": "Fr Shehab",
+    "area_manager": "Ibrahim Mahmoud"
+  },
+  {
+    "shop_name": "Fr Mazar Mall",
+    "area_manager": "Ibrahim Mahmoud"
+  },
+  {
+    "shop_name": "Fr 6 October",
+    "area_manager": "Ibrahim Mahmoud"
+  },
+  {
+    "shop_name": "EXP Tersaa",
+    "area_manager": "Ibrahim Mahmoud"
+  },
+  {
+    "shop_name": "EXP Mesaha Fisal",
+    "area_manager": "Ibrahim Mahmoud"
+  },
+  {
+    "shop_name": "EXP Hadayek ElMohandseen",
+    "area_manager": "Ibrahim Mahmoud"
+  },
+  {
+    "shop_name": "EXP Hadayek ElAhram Gate 4",
+    "area_manager": "Ibrahim Mahmoud"
+  },
+  {
+    "shop_name": "EXP El Lebeny",
+    "area_manager": "Ibrahim Mahmoud"
+  },
+  {
+    "shop_name": "EXP El Haram",
+    "area_manager": "Ibrahim Mahmoud"
+  },
+  {
+    "shop_name": "EXP El Eshreni",
+    "area_manager": "Ibrahim Mahmoud"
+  },
+  {
+    "shop_name": "OB. Tanta Elmodirya",
+    "area_manager": "Maged Magdy"
+  },
+  {
+    "shop_name": "OB. Segar Tanta",
+    "area_manager": "Maged Magdy"
+  },
+  {
+    "shop_name": "OB. Kom Hamada",
+    "area_manager": "Maged Magdy"
+  },
+  {
+    "shop_name": "OB. Kafr Elzayat 2",
+    "area_manager": "Maged Magdy"
+  },
+  {
+    "shop_name": "OB. ElDalgamon New",
+    "area_manager": "Maged Magdy"
+  },
+  {
+    "shop_name": "OB. Ebiar",
+    "area_manager": "Maged Magdy"
+  },
+  {
+    "shop_name": "OB. Berma",
+    "area_manager": "Maged Magdy"
+  },
+  {
+    "shop_name": "Fr Kafr Elzayat",
+    "area_manager": "Maged Magdy"
+  },
+  {
+    "shop_name": "EXP Tanta",
+    "area_manager": "Maged Magdy"
+  },
+  {
+    "shop_name": "EXP Galaa Tanta",
+    "area_manager": "Maged Magdy"
+  },
+  {
+    "shop_name": "OB. Naser Baniswef",
+    "area_manager": "Michael Fayek"
+  },
+  {
+    "shop_name": "OB. El Saff",
+    "area_manager": "Michael Fayek"
+  },
+  {
+    "shop_name": "OB. Al Ayat",
+    "area_manager": "Michael Fayek"
+  },
+  {
+    "shop_name": "Fr Central Fayoum",
+    "area_manager": "Michael Fayek"
+  },
+  {
+    "shop_name": "EXP Naser",
+    "area_manager": "Michael Fayek"
+  },
+  {
+    "shop_name": "EXP Beba",
+    "area_manager": "Michael Fayek"
+  },
+  {
+    "shop_name": "EXP Ahnsia",
+    "area_manager": "Michael Fayek"
+  },
+  {
+    "shop_name": "El Borombel Youth Center",
+    "area_manager": "Michael Fayek"
+  },
+  {
+    "shop_name": "Atfiah Youth Center",
+    "area_manager": "Michael Fayek"
+  },
+  {
+    "shop_name": "Al Agameyin Youth Center",
+    "area_manager": "Michael Fayek"
+  },
+  {
+    "shop_name": "OB. Mokattam2",
+    "area_manager": "Mohamed Emad"
+  },
+  {
+    "shop_name": "OB. El Drasa",
+    "area_manager": "Mohamed Emad"
+  },
+  {
+    "shop_name": "OB. Bassaten2",
+    "area_manager": "Mohamed Emad"
+  },
+  {
+    "shop_name": "Fr Mokkattam",
+    "area_manager": "Mohamed Emad"
+  },
+  {
+    "shop_name": "Fr Hadayek El Koba",
+    "area_manager": "Mohamed Emad"
+  },
+  {
+    "shop_name": "Fr Aghakhan",
+    "area_manager": "Mohamed Emad"
+  },
+  {
+    "shop_name": "EXP Zawya El Hamra",
+    "area_manager": "Mohamed Emad"
+  },
+  {
+    "shop_name": "EXP Sayeda Zenab",
+    "area_manager": "Mohamed Emad"
+  },
+  {
+    "shop_name": "EXP Sawah",
+    "area_manager": "Mohamed Emad"
+  },
+  {
+    "shop_name": "EXP Saker Korish",
+    "area_manager": "Mohamed Emad"
+  },
+  {
+    "shop_name": "EXP Matarya",
+    "area_manager": "Mohamed Emad"
+  },
+  {
+    "shop_name": "EXP Manshayt Naser Mini",
+    "area_manager": "Mohamed Emad"
+  },
+  {
+    "shop_name": "OB. Marg 5",
+    "area_manager": "Mohamed Mostafa"
+  },
+  {
+    "shop_name": "OB. Khosos",
+    "area_manager": "Mohamed Mostafa"
+  },
+  {
+    "shop_name": "OB. Khanka",
+    "area_manager": "Mohamed Mostafa"
+  },
+  {
+    "shop_name": "OB. Kafr Tohorms",
+    "area_manager": "Mohamed Mostafa"
+  },
+  {
+    "shop_name": "OB. Ezbet El Nakhl 3",
+    "area_manager": "Mohamed Mostafa"
+  },
+  {
+    "shop_name": "OB. El Sayed Hamada",
+    "area_manager": "Mohamed Mostafa"
+  },
+  {
+    "shop_name": "OB. Basos",
+    "area_manager": "Mohamed Mostafa"
+  },
+  {
+    "shop_name": "OB. Bashteel 2",
+    "area_manager": "Mohamed Mostafa"
+  },
+  {
+    "shop_name": "OB. Bahtem2",
+    "area_manager": "Mohamed Mostafa"
+  },
+  {
+    "shop_name": "OB. Bahtem",
+    "area_manager": "Mohamed Mostafa"
+  },
+  {
+    "shop_name": "OB. 15May",
+    "area_manager": "Mohamed Mostafa"
+  },
+  {
+    "shop_name": "Fr Shoubra El Kema",
+    "area_manager": "Mohamed Mostafa"
+  },
+  {
+    "shop_name": "EXP Talbia",
+    "area_manager": "Mohamed Mostafa"
+  },
+  {
+    "shop_name": "EXP Shoubra Al Khima",
+    "area_manager": "Mohamed Mostafa"
+  },
+  {
+    "shop_name": "EXP Shabory",
+    "area_manager": "Mohamed Mostafa"
+  },
+  {
+    "shop_name": "EXP NASRCITY 7TH DISTRICT",
+    "area_manager": "Mohamed Sayed"
+  },
+  {
+    "shop_name": "EXP Nahia",
+    "area_manager": "Mohamed Mostafa"
+  },
+  {
+    "shop_name": "EXP Kanater",
+    "area_manager": "Mohamed Mostafa"
+  },
+  {
+    "shop_name": "EXP Asyut",
+    "area_manager": "Michael Fayek"
+  },
+  {
+    "shop_name": "EXP Assuit",
+    "area_manager": "Michael Fayek"
+  },
+  {
+    "shop_name": "OB. Nefisha",
+    "area_manager": "Mohamed Ragab"
+  },
+  {
+    "shop_name": "OB. Ismailia Abo-Atwa",
+    "area_manager": "Mohamed Ragab"
+  },
+  {
+    "shop_name": "EXP Salheya",
+    "area_manager": "Mohamed Ragab"
+  },
+  {
+    "shop_name": "OB. Sefarat",
+    "area_manager": "Mohamed Sayed"
+  },
+  {
+    "shop_name": "OB. Matarya",
+    "area_manager": "Mohamed Sayed"
+  },
+  {
+    "shop_name": "OB. El Hoda",
+    "area_manager": "Mohamed Sayed"
+  },
+  {
+    "shop_name": "OB. Ain Shams",
+    "area_manager": "Mohamed Sayed"
+  },
+  {
+    "shop_name": "Fr Ahly Club",
+    "area_manager": "Mohamed Sayed"
+  },
+  {
+    "shop_name": "EXP Mostafa Hafez",
+    "area_manager": "Mohamed Sayed"
+  },
+  {
+    "shop_name": "EXP ElKharga",
+    "area_manager": "Mohamed Sayed"
+  },
+  {
+    "shop_name": "OB. Abo Soliman",
+    "area_manager": "Mostafa Adel"
+  },
+  {
+    "shop_name": "Fr Moharam Bek Alex",
+    "area_manager": "Mostafa Adel"
+  },
+  {
+    "shop_name": "EXP Syouf",
+    "area_manager": "Mostafa Adel"
+  },
+  {
+    "shop_name": "EXP Nabawy El Mohandess",
+    "area_manager": "Mostafa Adel"
+  },
+  {
+    "shop_name": "EXP Ibrahimia",
+    "area_manager": "Mostafa Adel"
+  },
+  {
+    "shop_name": "EXP Ghobryal",
+    "area_manager": "Mostafa Adel"
+  },
+  {
+    "shop_name": "EXP Borg El Arab",
+    "area_manager": "Mostafa Adel"
+  },
+  {
+    "shop_name": "OB. Suez Oraby",
+    "area_manager": "Mostafa Mohamed"
+  },
+  {
+    "shop_name": "OB. Suez ELSalam",
+    "area_manager": "Mostafa Mohamed"
+  },
+  {
+    "shop_name": "OB. Ismailia1",
+    "area_manager": "Mostafa Mohamed"
+  },
+  {
+    "shop_name": "Fr Suez",
+    "area_manager": "Mostafa Mohamed"
+  },
+  {
+    "shop_name": "EXP Suez2",
+    "area_manager": "Mostafa Mohamed"
+  },
+  {
+    "shop_name": "EXP Suez Kuwait",
+    "area_manager": "Mostafa Mohamed"
+  },
+  {
+    "shop_name": "EXP Suez Faisal",
+    "area_manager": "Mostafa Mohamed"
+  },
+  {
+    "shop_name": "EXP Suez",
+    "area_manager": "Mostafa Mohamed"
+  },
+  {
+    "shop_name": "EXP Ismailia2",
+    "area_manager": "Mostafa Mohamed"
+  },
+  {
+    "shop_name": "EXP Ismailia EL-Fardous",
+    "area_manager": "Mostafa Mohamed"
+  },
+  {
+    "shop_name": "EXP Ismailia AboSoeir",
+    "area_manager": "Mostafa Mohamed"
+  },
+  {
+    "shop_name": "EXP Ismailia",
+    "area_manager": "Mostafa Mohamed"
+  },
+  {
+    "shop_name": "Exp Hyper Badr",
+    "area_manager": "Mostafa Mohamed"
+  },
+  {
+    "shop_name": "Shmaa Youth Center",
+    "area_manager": "Mustafa Shaqery"
+  },
+  {
+    "shop_name": "Samadon Youth Center",
+    "area_manager": "Mustafa Shaqery"
+  },
+  {
+    "shop_name": "OB. Wardan1",
+    "area_manager": "Mustafa Shaqery"
+  },
+  {
+    "shop_name": "OB. Nekla",
+    "area_manager": "Mustafa Shaqery"
+  },
+  {
+    "shop_name": "OB. El Mansouria",
+    "area_manager": "Mustafa Shaqery"
+  },
+  {
+    "shop_name": "EXP Talia",
+    "area_manager": "Mustafa Shaqery"
+  },
+  {
+    "shop_name": "OB. Qantara EL-Moahda",
+    "area_manager": "Omar Elsaid"
+  },
+  {
+    "shop_name": "OB. Ismailia ELHekr",
+    "area_manager": "Omar Elsaid"
+  },
+  {
+    "shop_name": "OB. Ismailia EL-Mostashfa",
+    "area_manager": "Omar Elsaid"
+  },
+  {
+    "shop_name": "EXP Quantra",
+    "area_manager": "Omar Elsaid"
+  },
+  {
+    "shop_name": "OB. Al Dakhla",
+    "area_manager": "Shady Maher"
+  },
+  {
+    "shop_name": "OB. Abo Korkas New",
+    "area_manager": "Shady Maher"
+  },
+  {
+    "shop_name": "EXP New Valley",
+    "area_manager": "Shady Maher"
+  },
+  {
+    "shop_name": "EXP Matay",
+    "area_manager": "Shady Maher"
+  },
+  {
+    "shop_name": "EXP Dayr Mawas",
+    "area_manager": "Shady Maher"
+  },
+  {
+    "shop_name": "EXP Abo korkas",
+    "area_manager": "Shady Maher"
+  }
+]

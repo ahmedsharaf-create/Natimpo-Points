@@ -14,7 +14,7 @@ export default function DashboardPage() {
   const [dialRows, setDialRows] = useState(null);
   const [dialsFileName, setDialsFileName] = useState("");
   const [mapRows, setMapRows] = useState([]);
-  const [rate, setRate] = useState(0.04);
+  const [rate, setRate] = useState(4);
   const [error, setError] = useState("");
 
   useEffect(() => {

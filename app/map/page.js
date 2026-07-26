@@ -9,6 +9,7 @@ export default function MapPage() {
   const [query, setQuery] = useState("");
   const [newShop, setNewShop] = useState("");
   const [newManager, setNewManager] = useState("");
+  const [newRegion, setNewRegion] = useState("");
   const [toast, setToast] = useState("");
   const fileInputRef = useRef(null);
 
@@ -30,11 +31,13 @@ export default function MapPage() {
     e.preventDefault();
     const shop = newShop.trim();
     const manager = newManager.trim();
+    const region = newRegion.trim();
     if (!shop || !manager) return;
-    const next = [...rows, { shop_name: shop, area_manager: manager }];
+    const next = [...rows, { shop_name: shop, area_manager: manager, region }];
     persist(next);
     setNewShop("");
     setNewManager("");
+    setNewRegion("");
     showToast("Shop added to the map");
   }
 
@@ -73,6 +76,7 @@ export default function MapPage() {
     const sheetRows = rows.map((r) => ({
       "Shop Name": r.shop_name,
       "Area Manager": r.area_manager,
+      Region: r.region || "",
     }));
     const wb = buildSingleSheetWorkbook(sheetRows, "Map");
     const blob = writeWorkbookToBlob(wb);
@@ -89,12 +93,24 @@ export default function MapPage() {
     if (!q) return rows;
     return rows.filter(
       (r) =>
-        r.shop_name.toLowerCase().includes(q) || r.area_manager.toLowerCase().includes(q)
+        r.shop_name.toLowerCase().includes(q) ||
+        r.area_manager.toLowerCase().includes(q) ||
+        (r.region || "").toLowerCase().includes(q)
     );
   }, [rows, query]);
 
   const managerCount = useMemo(
     () => new Set(rows.map((r) => r.area_manager.trim()).filter(Boolean)).size,
+    [rows]
+  );
+
+  const regionCount = useMemo(
+    () => new Set(rows.map((r) => (r.region || "").trim()).filter(Boolean)).size,
+    [rows]
+  );
+
+  const missingRegionCount = useMemo(
+    () => rows.filter((r) => !(r.region || "").trim()).length,
     [rows]
   );
 
@@ -106,14 +122,14 @@ export default function MapPage() {
         </p>
         <h1 className="font-display text-3xl">Who owns which shop</h1>
         <p className="text-inkfaint mt-2 max-w-xl">
-          This map decides which area manager a shop's points land in. Edit it here,
-          or import an updated map file — new rows overwrite existing shops with the
-          same name.
+          This map decides which area manager — and which region — a shop's points
+          and stock land in. Edit it here, or import an updated map file; new rows
+          overwrite existing shops with the same name.
         </p>
       </header>
 
       <div className="rounded-2xl bg-card border border-line p-5 flex flex-wrap items-center gap-4 justify-between">
-        <div className="flex gap-6 text-sm">
+        <div className="flex gap-6 text-sm flex-wrap">
           <div>
             <p className="text-inkfaint">Shops mapped</p>
             <p className="font-display text-2xl mt-0.5 mono-nums">{rows.length}</p>
@@ -121,6 +137,10 @@ export default function MapPage() {
           <div>
             <p className="text-inkfaint">Area managers</p>
             <p className="font-display text-2xl mt-0.5 mono-nums">{managerCount}</p>
+          </div>
+          <div>
+            <p className="text-inkfaint">Regions</p>
+            <p className="font-display text-2xl mt-0.5 mono-nums">{regionCount}</p>
           </div>
         </div>
         <div className="flex flex-wrap gap-2">
@@ -154,8 +174,17 @@ export default function MapPage() {
         </div>
       </div>
 
+      {missingRegionCount > 0 && (
+        <div className="mt-5 rounded-xl bg-gold-light border border-gold/30 text-ink px-4 py-3 text-sm">
+          <span className="font-medium">{missingRegionCount} shop{missingRegionCount === 1 ? "" : "s"}</span>{" "}
+          {missingRegionCount === 1 ? "has" : "have"} no region set yet — Stock exports will
+          group those under "Unassigned" region. Fill in the Region column below, or
+          import a map file that includes a Region column.
+        </div>
+      )}
+
       <form onSubmit={addRow} className="rounded-2xl bg-card border border-line p-5 mt-5 flex flex-wrap items-end gap-3">
-        <div className="flex-1 min-w-[180px]">
+        <div className="flex-1 min-w-[160px]">
           <label className="text-xs text-inkfaint">Shop name</label>
           <input
             value={newShop}
@@ -164,12 +193,21 @@ export default function MapPage() {
             className="w-full rounded-lg border border-line bg-paper px-3 py-2 mt-1 text-sm"
           />
         </div>
-        <div className="flex-1 min-w-[180px]">
+        <div className="flex-1 min-w-[160px]">
           <label className="text-xs text-inkfaint">Area manager</label>
           <input
             value={newManager}
             onChange={(e) => setNewManager(e.target.value)}
             placeholder="e.g. Mostafa Adel"
+            className="w-full rounded-lg border border-line bg-paper px-3 py-2 mt-1 text-sm"
+          />
+        </div>
+        <div className="flex-1 min-w-[140px]">
+          <label className="text-xs text-inkfaint">Region</label>
+          <input
+            value={newRegion}
+            onChange={(e) => setNewRegion(e.target.value)}
+            placeholder="e.g. Alexandria"
             className="w-full rounded-lg border border-line bg-paper px-3 py-2 mt-1 text-sm"
           />
         </div>
@@ -185,7 +223,7 @@ export default function MapPage() {
         <input
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search shop or manager…"
+          placeholder="Search shop, manager, or region…"
           className="w-full max-w-xs rounded-lg border border-line bg-card px-3 py-2 text-sm"
         />
         {toast && <span className="text-sm text-brand">{toast}</span>}
@@ -197,20 +235,21 @@ export default function MapPage() {
             <tr className="text-left text-inkfaint border-b border-line bg-paper/60">
               <th className="px-4 py-3 font-medium">Shop name</th>
               <th className="px-4 py-3 font-medium">Area manager</th>
+              <th className="px-4 py-3 font-medium">Region</th>
               <th className="px-4 py-3 font-medium w-16"></th>
             </tr>
           </thead>
           <tbody>
             {filtered.length === 0 ? (
               <tr>
-                <td colSpan={3} className="px-4 py-10 text-center text-inkfaint">
+                <td colSpan={4} className="px-4 py-10 text-center text-inkfaint">
                   {rows.length === 0
                     ? "No shops mapped yet. Add one above or import a map file."
                     : "No shops match your search."}
                 </td>
               </tr>
             ) : (
-              filtered.map((r, i) => {
+              filtered.map((r) => {
                 const rowIndex = rows.indexOf(r);
                 return (
                   <tr key={rowIndex} className="border-b border-line last:border-0">
@@ -225,6 +264,14 @@ export default function MapPage() {
                       <input
                         value={r.area_manager}
                         onChange={(e) => updateRow(rowIndex, "area_manager", e.target.value)}
+                        className="w-full rounded-lg px-2 py-1.5 bg-transparent hover:bg-paper focus:bg-paper outline-none"
+                      />
+                    </td>
+                    <td className="px-2 py-1.5">
+                      <input
+                        value={r.region || ""}
+                        onChange={(e) => updateRow(rowIndex, "region", e.target.value)}
+                        placeholder="—"
                         className="w-full rounded-lg px-2 py-1.5 bg-transparent hover:bg-paper focus:bg-paper outline-none"
                       />
                     </td>

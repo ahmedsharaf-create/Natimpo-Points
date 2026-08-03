@@ -14,7 +14,7 @@ export default function PointsFlow() {
   const [dialRows, setDialRows] = useState(null);
   const [dialsFileName, setDialsFileName] = useState("");
   const [mapRows, setMapRows] = useState([]);
-  const [rate, setRate] = useState(4);
+  const [rate, setRate] = useState(0.04);
   const [error, setError] = useState("");
 
   useEffect(() => {
@@ -142,7 +142,7 @@ export default function PointsFlow() {
         <div>
           <h3 className="font-display text-base">Payout rate</h3>
           <p className="text-sm text-inkfaint mt-0.5">
-            Amount = Points × rate. Default is 4 % of the points balance.
+            Amount = Points × rate. Default is 0.04% of the points balance.
           </p>
         </div>
         <label className="flex items-center gap-2">

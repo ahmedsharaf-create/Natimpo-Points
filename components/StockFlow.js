@@ -18,7 +18,7 @@ export default function StockFlow() {
   const [stockRows, setStockRows] = useState(null);
   const [stockFileName, setStockFileName] = useState("");
   const [mapRows, setMapRows] = useState([]);
-  const [groupBy, setGroupBy] = useState("manager"); // "manager" | "region"
+  const [groupBy, setGroupBy] = useState("manager"); // "manager" | "region" | "all"
   const [error, setError] = useState("");
 
   useEffect(() => {
@@ -46,17 +46,17 @@ export default function StockFlow() {
     }
   }
 
-  const groupLabel = groupBy === "region" ? "Region" : "Area Manager";
+  const groupLabel =
+    groupBy === "region" ? "Region" : groupBy === "all" ? "All Stock" : "Area Manager";
   const unassignedKey = UNASSIGNED;
+  const fileSuffix =
+    groupBy === "region" ? "Region" : groupBy === "all" ? "(All)" : "Area Manager";
 
   function downloadWorkbook() {
     if (!joined) return;
     const wb = buildStockWorkbook(joined.grouped, unassignedKey, groupLabel);
     const blob = writeWorkbookToBlob(wb);
-    downloadBlob(
-      blob,
-      `Natimpo Points - Stock by ${groupLabel === "Region" ? "Region" : "Area Manager"}.xlsx`
-    );
+    downloadBlob(blob, `Natimpo Points - Stock by ${fileSuffix}.xlsx`);
   }
 
   async function downloadZip() {
@@ -82,7 +82,7 @@ export default function StockFlow() {
       zip.file(`${group.replace(/[\\/:*?"<>|]/g, " ")}.xlsx`, buf);
     }
     const content = await zip.generateAsync({ type: "blob" });
-    downloadBlob(content, `Natimpo Points - Stock by ${groupLabel}.zip`);
+    downloadBlob(content, `Natimpo Points - Stock by ${fileSuffix}.zip`);
   }
 
   const groupSummaries = useMemo(() => {
@@ -137,7 +137,8 @@ export default function StockFlow() {
         <div>
           <h3 className="font-display text-base">Group sheets by</h3>
           <p className="text-sm text-inkfaint mt-0.5">
-            Choose whether each exported sheet covers one area manager or one region.
+            Split into one sheet per area manager, one per region, or keep everything
+            in a single sheet.
           </p>
         </div>
         <div className="flex rounded-full border border-line bg-paper p-1">
@@ -156,6 +157,14 @@ export default function StockFlow() {
             }`}
           >
             Region
+          </button>
+          <button
+            onClick={() => setGroupBy("all")}
+            className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
+              groupBy === "all" ? "bg-brand text-white" : "text-inkfaint hover:text-ink"
+            }`}
+          >
+            All in one sheet
           </button>
         </div>
       </div>
@@ -177,7 +186,8 @@ export default function StockFlow() {
               <h2 className="font-display text-xl">Result</h2>
               <p className="text-sm text-inkfaint mt-1">
                 {totals.rows} stock rows matched into {groupSummaries.length} sheet
-                {groupSummaries.length === 1 ? "" : "s"} by {groupLabel.toLowerCase()}
+                {groupSummaries.length === 1 ? "" : "s"}
+                {groupBy !== "all" && <> by {groupLabel.toLowerCase()}</>}
                 {totals.unresolved > 0 && (
                   <>
                     {" · "}
@@ -197,7 +207,9 @@ export default function StockFlow() {
             <table className="w-full text-sm">
               <thead>
                 <tr className="text-left text-inkfaint border-b border-line bg-paper/60">
-                  <th className="px-4 py-3 font-medium">{groupLabel}</th>
+                  <th className="px-4 py-3 font-medium">
+                    {groupBy === "all" ? "Sheet" : groupLabel}
+                  </th>
                   <th className="px-4 py-3 font-medium text-right">Rows</th>
                   <th className="px-4 py-3 font-medium text-right">Total quantity</th>
                   <th className="px-4 py-3 font-medium text-right">Total price</th>
@@ -252,14 +264,18 @@ export default function StockFlow() {
               onClick={downloadWorkbook}
               className="rounded-full bg-brand text-white px-5 py-2.5 text-sm font-medium hover:bg-brand-dark transition-colors"
             >
-              Download workbook (one sheet per {groupLabel.toLowerCase()})
+              {groupBy === "all"
+                ? "Download workbook (single sheet)"
+                : `Download workbook (one sheet per ${groupLabel.toLowerCase()})`}
             </button>
-            <button
-              onClick={downloadZip}
-              className="rounded-full border border-line bg-card px-5 py-2.5 text-sm font-medium hover:bg-black/5 transition-colors"
-            >
-              Download ZIP (one file per {groupLabel.toLowerCase()})
-            </button>
+            {groupBy !== "all" && (
+              <button
+                onClick={downloadZip}
+                className="rounded-full border border-line bg-card px-5 py-2.5 text-sm font-medium hover:bg-black/5 transition-colors"
+              >
+                Download ZIP (one file per {groupLabel.toLowerCase()})
+              </button>
+            )}
           </div>
         </section>
       ) : null}
